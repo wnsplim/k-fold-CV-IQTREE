@@ -1,0 +1,35 @@
+# Alignment
+sequence_file: "example.phy"
+sequence_format: "phylip"
+shuffle_alignment: true
+
+# Fold numbers
+k: 5
+
+# Parallelization
+n_cores: 8
+
+# IQ-TREE path
+iqtree_bin: "/storage2/wonseop/0.Private_Software/iqtree-3.0.1-Linux/iqtree-3.0.1-Linux/bin/"
+
+# Models
+model: ["F81", "HKY", "GTR"]
+
+freq:
+  - "+FO"
+invariant:
+  - ""
+  - "+I"
+rate_heterogeneity:
+  - ""
+  - "+G4"
+
+# Maximum mixture order
+max_order: 20
+
+# Stopping rules
+min_components: 5
+stopping_patience: 3
+
+# Save fold files
+save_folds: false
